@@ -227,10 +227,10 @@ def inference(text, ref_s, model, sampler, textclenaer, to_mel, device, model_pa
     return out.squeeze().cpu().numpy()[..., :-50]
 
 
-def get_voice_dir():
-    target = os.path.join(os.path.dirname(os.path.realpath(__file__)), '../voices')
+def get_voice_dir(root="voices"):
+    target = os.path.join(os.path.dirname(os.path.realpath(__file__)), f'../{root}')
     if not os.path.exists(target):
-        target = os.path.dirname('./voices/')
+        target = os.path.dirname(f'./{root}/')
 
     os.makedirs(target, exist_ok=True)
 
