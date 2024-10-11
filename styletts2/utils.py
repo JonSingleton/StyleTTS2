@@ -288,7 +288,7 @@ def get_voice_list(dir=get_voice_dir(), append_defaults=False, extensions=["wav"
 	
 	return res
 
-def load_models_webui(sigma_value, device="cpu", configuration_path="models/model_paths.yml"):
+def load_models_webui(sigma_value, device="cpu", configuration_path=os.path.join('models','model_paths.yml')):
     config = load_configurations(configuration_path)
     ASR_config = config.get('ASR_config', False)
     ASR_path = config.get('ASR_path', False)
