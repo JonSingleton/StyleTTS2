@@ -7,7 +7,7 @@ name = "styletts2"
 version = "1.0"
 description = "Installable package for styletts2"
 authors = [
-    { name = "Jarod Mica" }
+    { name = "Jon Singleton" }
 ]
 
 dependencies = [
@@ -39,7 +39,7 @@ monotonic_align = [
 ]
 
 [project.urls]
-repository = "https://github.com/JarodMica/StyleTTS2"
+repository = "https://github.com/JonSingleton/StyleTTS2"
 
 [tool.setuptools.packages.find]
 include = ["styletts2", "styletts2.*"]
